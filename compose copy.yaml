@@ -1,0 +1,39 @@
+version: "3"
+
+services:
+  app:
+    image: app
+    build:
+      context: .
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_USER: jmsdb
+      DB_PASSWORD: password
+      DB_NAME: api
+    depends_on:
+      - postgres
+    links:
+      - postgres
+
+  postgres:
+    image: postgres:latest
+    restart: always
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
+    env_file:
+      - .env
+    environment:
+      POSTGRES_USER: jmsdb
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: api
+
+volumes:
+  postgresdata:
+    driver: local

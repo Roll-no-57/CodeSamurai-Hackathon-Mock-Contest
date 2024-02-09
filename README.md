@@ -1,9 +1,13 @@
-# Code Samurai Mock Hackathon - Team BUET_FRIENDS
+# Code Samurai Mock Hackathon 
 
-## Team Members:
-1. Junayed Mohiuddin Shanto
-2. Mosharaf Hossain Apurbo
-3. Mohiuddin Sizan
+### BUET_FRIENDS
+
+🎓 **University:** Bangladesh University Of Engineering And Technology
+
+📧 **Emails:**
+- [jonayedmohiuddin@gmail.com](mailto:jonayedmohiuddin@gmail.com)
+- [aoarish397@gmail.com](mailto:aoarish397@gmail.com)
+- [mohiuddinsizan13@gmail.com](mailto:mohiuddinsizan13@gmail.com)
 
 ## Project: Samurai e-Book Store
 
